@@ -1,0 +1,6 @@
+modelnet10: /home/rhermoza/data/3d/modelnet/ModelNet10/voxels.npy
+modelnet10_64: /home/rhermoza/data/3d/modelnet/ModelNet10/voxels64.npy
+modelnet40: /home/rhermoza/data/3d/modelnet/ModelNet40/voxels.npy
+arq_dataset: /home/rhermoza/data/3d/custom_arq_dataset.npy
+arq_dataset2: /home/rhermoza/data/3d/custom_arq_dataset2.npy
+larco: /home/rhermoza/data/3d/Larco-dataset/voxels.npy
