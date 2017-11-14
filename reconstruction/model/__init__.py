@@ -10,8 +10,7 @@ from ..utils import format_time
 
 OPTS = ['voxels-ugan', 'voxels-u',
         'voxels-vgan', 'voxels-v',
-        'voxels-usegan', 'voxels-use',
-        'voxels-usev2gan', 'voxels-usev3gan', 'voxels-usev4gan']
+        'voxels-usegan', 'voxels-use']
 
 def check_epoch(file):
     try:
@@ -101,6 +100,7 @@ class LoadModel(object):
             os.makedirs(out_path)
         
         self.opt = opt.lower()
+        self.input_size = 64 if self.opt == 'voxels-use64gan' else 32
         self.gan = self.opt[-3:] == 'gan'
         self.model_type = self.opt[:-3] if self.gan else self.opt
         self.data_file = data_file
@@ -210,7 +210,7 @@ class LoadModel(object):
             discriminator = make_discriminator(self.n_labels, self.model_type)
             discriminator_model, generator_model = build_gan_arch(discriminator, generator,
                                                                   self.batch_size, self.gradient_penalty,
-                                                                  self.loss, self.loss_multiply)
+                                                                  self.loss, self.loss_multiply, self.input_size)
             self.discriminator = discriminator
             self.discriminator_model = discriminator_model
             self.generator_model = generator_model
