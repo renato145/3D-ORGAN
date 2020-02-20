@@ -4,6 +4,8 @@
 Code for paper ["3D Reconstruction of Incomplete Archaeological Objects Using a Generative Adversarial Network"](https://dl.acm.org/doi/abs/10.1145/3208159.3208173)
 [[arxiv]](https://arxiv.org/abs/1711.06363).
 
+![Sample](img.png)
+
 ## Citation
 
 Please use the following bibtex entry:
