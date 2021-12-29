@@ -1,0 +1,22 @@
+name: 3d_organ
+dependencies:
+  - tensorflow-gpu==1.14.0
+  - pip:
+    - click==7.1.2
+    - future==0.18.2
+    - google-pasta==0.2.0
+    - joblib==1.1.0
+    - Keras==2.3.1
+    - Keras-Applications==1.0.8
+    - libmesh==0.0.0
+    - numpy==1.16.0
+    - protobuf==3.19.1
+    - PyYAML==6.0
+    - scikit-learn==0.23.2
+    - scipy==1.5.2
+    - tensorboard==1.14.0
+    - tensorflow-estimator==1.14.0
+    - termcolor==1.1.0
+    - threadpoolctl==3.0.0
+    - torch==1.5.0
+    - h5py==2.10.0
